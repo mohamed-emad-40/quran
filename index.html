@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>quran</title>
+    <!-- css file -->
+    <link rel="stylesheet" href="/css/style.css" />
+    <!-- normalize file -->
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <!-- font awesome -->
+    <link rel="stylesheet" href="/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- start header -->
+    <header>
+      <div class="container">
+        <div class="logo">
+          <h1>القران الكريم</h1>
+        </div>
+        <nav class="links">
+          <i class="fa-solid fa-bars"></i>
+          <ul>
+            <li><a href="#surah">استعراض السور</a></li>
+            <li><a href="#live">بث مباشر</a></li>
+            <li><a href="#about">راديو</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- end header -->
+    <!-- start landing -->
+    <section class="landing">
+      <div class="container">
+        <div class="intro-text">
+          <p>رحله في رحاب</p>
+          <h1>القران الكريم</h1>
+        </div>
+      </div>
+    </section>
+    <!-- end landing -->
+    <!-- start features -->
+    <section class="features" id="surah">
+      <div class="container">
+        <div class="feat">
+          <select name="resiter" id="choosereciter">
+            <option value="">اختر قارئ</option>
+          </select>
+          <select id="choosemoshaf" name="surah">
+            <option value="">اختر روايه</option>
+          </select>
+          <select id="choosesurah" name="read">
+            <option value="">اختر سوره</option>
+          </select>
+        </div>
+        <div class="audio">
+          <audio controls id="audioplayer"></audio>
+        </div>
+      </div>
+    </section>
+    <!-- end features -->
+    <!-- start live -->
+    <section class="live" id="live">
+      <div class="container">
+        <div class="intro-text">
+          <h1>قناه البث المباشر</h1>
+        </div>
+        <video width="100%" controls></video>
+      </div>
+    </section>
+    <!-- end live -->
+    <footer>
+      &copy; 2024 <span>القران الكريم</span> All Right Reserved by Mohamed Emad
+    </footer>
+    <script src="/script.js"></script>
+  </body>
+</html>

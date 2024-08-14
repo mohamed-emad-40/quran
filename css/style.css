@@ -1,0 +1,222 @@
+/* start glopal rules */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Baloo Bhaijaan 2", sans-serif;
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/*small*/
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+/*end global rules*/
+/* start header */
+header {
+  padding: 0;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo h1 {
+  color: var(--main-color);
+  margin-bottom: 5px;
+}
+header .container .links {
+  position: relative;
+}
+header .container i {
+  display: none;
+  font-size: 30px;
+}
+.links ul {
+  margin-bottom: 0;
+  display: flex;
+  list-style: none;
+}
+.links ul li {
+  font-size: 20px;
+  padding-left: 50px;
+}
+.links ul li a {
+  color: black;
+  font-size: 20px;
+  font-weight: 500;
+  list-style: none;
+  text-decoration: none;
+}
+.links ul li a:hover {
+  padding-top: 30px;
+  background-color: rgb(184, 184, 184);
+  color: white;
+  border-radius: 5px;
+}
+@media (max-width: 768px) {
+  .links ul {
+    display: none;
+  }
+  header .container i {
+    display: block;
+  }
+  header .links ul {
+    z-index: 1;
+    position: absolute;
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    right: 0;
+    top: calc(100% + 15px);
+    min-width: 200px;
+    display: none;
+    background-color: rgb(255, 255, 255);
+  }
+  header .links ul::before {
+    content: "";
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent #f6f6f6 transparent;
+    position: absolute;
+    right: 5px;
+    top: -20px;
+  }
+  header .links:hover ul {
+    display: block;
+  }
+  header .links a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: var(--main-color);
+    transition: 0.3s;
+  }
+  header .links a:hover {
+    padding-left: 25px;
+  }
+  header .links ul li:not(:last-child) {
+    border-bottom: 1px solid #ddd;
+  }
+}
+/* end header */
+/* start landing */
+.landing {
+  background-image: url(../images/moshaf.jpg);
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.landing .intro-text {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.landing h1 {
+  font-size: 50px;
+  font-weight: bold;
+  color: white;
+}
+.landing p {
+  font-size: 25px;
+  word-spacing: 10px;
+  line-height: 15px;
+  color: white;
+}
+/* end landing */
+
+.features .container {
+  box-shadow: 2px 0px 12px 1px gray;
+  border-radius: 50px;
+  height: 300px;
+  background-color: rgb(255, 255, 255);
+  margin-top: -200px;
+  padding-top: 50px;
+}
+.features .feat {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.features .feat select {
+  padding-left: 10px;
+  margin-left: 20px;
+  width: 300px;
+  height: 50px;
+  border-radius: 50px;
+  align-items: center;
+}
+.features .audio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 100px;
+}
+.features audio {
+  width: 900px;
+}
+@media (max-width: 768px) {
+  .features .container {
+    padding-top: 10px;
+  }
+  .features .feat {
+    display: block;
+  }
+  .features select {
+    margin-top: 10px;
+  }
+  .features .audio {
+    padding-top: 10px;
+  }
+}
+/*-----------------------------------*/
+.live {
+  margin-top: 50px;
+  background-image: url(../images/241393.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 80vh;
+}
+.live .intro-text {
+  color: white;
+  padding-top: 20px;
+  text-align: center;
+}
+/*-----------------------------*/
+footer {
+  background-color: black;
+  color: white;
+  padding: 30px 10px;
+  text-align: center;
+}
+footer span {
+  color: var(--main-color);
+  font-weight: bold;
+}
